@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Send Mail</title>
+
+        <!--------------------- CSS---------------------->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <!--AngularJS files-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+        <script src="JS/page2.js"></script>
+
+
+    </head>
+
+    <body ng-controller="ctrl">
+	<!--------------------container------------------------>
+	    <div class="container-fluid">
+                   <div class="row" style="padding-top:200px">
+					    <div class="col-sm-5 col-lg-push-3">
+                        	<div class="form-box">
+	                        	<div class="form-top">
+	                        		<div class="form-top-left">
+	                        			<h2>SEND ACK TO SD</h2>
+	                        		</div>
+                             <!--  <div class="form-top-right">
+	                        			   <img src="assets\img\pos_logo_updated_web.gif">
+	                        		</div> -->
+	                        		<div class="form-top-right">
+	                        			<i class="fa fa-paper-plane-o"></i>
+	                        		</div>
+	                            </div>
+	                            <div class="form-bottom">
+
+				                            <div class="form-group">
+				                        	<input type="text" ng-model="message" placeholder="Optional Description ..." class="form-username form-control" id="form-username">
+				                        </div>
+				                     <button type="button" ng-click="sendMessage()" class="btn">Send!</button>
+
+			                    </div>
+		                    </div>
+                      </div>
+                   </div>
+
+        </div>
+        <!------------------------- Javascript----------------------- -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+       <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+
+    </body>
+
+</html>
